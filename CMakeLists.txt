@@ -23,3 +23,10 @@ if(NOT subproject)
 endif()
 
 add_subdirectory(third_party)
+
+set(LOGXX_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/include)
+set(LOGXX_SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/src)
+
+add_subdirectory(src)
+
+add_subdirectory(test)
